@@ -1,0 +1,49 @@
+.container {
+    position: relative;
+    margin: 0 auto;
+    width: 100%;
+    max-width: 960px;
+}
+
+.viewline {
+    margin-top: 5.17rem;
+}
+
+
+
+.tagNavBar {
+    left: 0;
+    background-color: #fff;
+    position: fixed;
+    top: 4.3rem;
+    width: 100%;
+    height: 3.22rem;
+    z-index: 100;
+    box-shadow: 0 1px 2px 0 rgb(0 0 0 / 5%);
+    transition: all .2s;
+    transform: translateZ(0);
+}
+
+.tagitem {
+    max-width: 960px;
+    height: 100%;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    line-height: 1;
+}
+
+.tag {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    line-height: 1;
+    margin: auto;
+    color: rgb(85, 85, 95)
+}
+
+
+.tag a:hover {
+    color: rgb(61, 61, 250);
+    background-color: #fff;
+}
