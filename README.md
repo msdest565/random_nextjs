@@ -1,3 +1,15 @@
+启动方式
+```
+npm install
+
+npm run dev
+```
+
+需要先运行cms，否则无法得到数据，可能运行不了。
+
+
+
+
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
 ## Getting Started
