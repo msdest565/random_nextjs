@@ -6,9 +6,7 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint",
-    "commit": "git-cz",
-    "prepare": "husky install"
+    "lint": "next lint"
   },
   "dependencies": {
     "@arco-design/web-react": "^2.44.0",
