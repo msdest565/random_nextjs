@@ -1,4 +1,5 @@
 /* eslint-disable react/react-in-jsx-scope */
+<<<<<<< HEAD
 import type { ReactElement } from 'react'
 import { useEffect } from 'react'
 import axios from 'axios'
@@ -37,3 +38,12 @@ Home.getLayout = (page: ReactElement) => {
 
 Home.displayName = 'Home'
 export default Home
+=======
+export default function Home() {
+  return (
+    <>
+    <h2>基于SSR开发仿掘金站点</h2>
+    </>
+  )
+}
+>>>>>>> 3f80defba1e300d2adb7c0ce8d4b57a85b99becf

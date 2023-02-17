@@ -1,9 +1,14 @@
 /* eslint-disable react/react-in-jsx-scope */
+<<<<<<< HEAD
 import { Head, Html, Main, NextScript } from 'next/document'
+=======
+import { Html, Head, Main, NextScript } from 'next/document'
+>>>>>>> 3f80defba1e300d2adb7c0ce8d4b57a85b99becf
 
 export default function Document() {
   return (
     <Html lang="en">
+<<<<<<< HEAD
       <title>稀土掘金</title>
       <Head>
         <meta
@@ -15,6 +20,9 @@ export default function Document() {
         <link data-n-head="ssr" rel="icon" type="image/png" sizes="32x32" href="https://lf3-cdn-tos.bytescm.com/obj/static/xitu_juejin_web//static/favicons/favicon-32x32.png"></link>
         <link data-n-head="ssr" rel="icon" type="image/png" sizes="16x16" href="https://lf3-cdn-tos.bytescm.com/obj/static/xitu_juejin_web//static/favicons/favicon-16x16.png"></link>
       </Head>
+=======
+      <Head />
+>>>>>>> 3f80defba1e300d2adb7c0ce8d4b57a85b99becf
       <body>
         <Main />
         <NextScript />

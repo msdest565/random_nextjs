@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 import type { ReactElement, ReactNode } from 'react'
 import type { NextPage } from 'next'
 import type { AppProps } from 'next/app'
@@ -24,4 +25,11 @@ export default function App({ Component, pageProps }: AppPropsWithLayout) {
     ))
 
   return getLayout(<Component {...pageProps} />)
+=======
+import type { AppProps } from 'next/app'
+
+export default function App({ Component, pageProps }: AppProps) {
+  // eslint-disable-next-line react/react-in-jsx-scope
+  return <Component {...pageProps} />
+>>>>>>> 3f80defba1e300d2adb7c0ce8d4b57a85b99becf
 }
