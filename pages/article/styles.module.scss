@@ -1,18 +1,6 @@
 @import "../media.scss";
 
-.body {
-    margin: 0;
-}
 
-
-.background {
-    background-color: rgba($color: #302b2b, $alpha: 1.0);
-    width: 100.4%;
-    min-height: 100%;
-    height: auto;
-    position: absolute;
-    overflow: hidden;
-    margin-left: -1rem;
 
     .article_container {
         margin-top: 8rem;
@@ -62,14 +50,15 @@
 
     .content {
         margin-bottom: 5rem;
-        font-size: 16px;
-        line-height: 32px;
-
+        font-size: 1rem;
+            line-height: 2rem;
+            height: 100%;
+            color: white;
         img {
             width: 50rem;
         }
     }
-}
+
 
 @include media-ipad {
     .article {

@@ -19,7 +19,7 @@ export interface IArticleProps {
 const Article: NextPage<IArticleProps> = ({ title, author, description, createTime, content }) => {
   const converter = new showdown.Converter();
   return (
-    <div className={styles.background}>
+
       <div className={styles.article_container}>
         <div className={styles.article}>
       <h1 className={styles.title}>{title}</h1>
@@ -30,7 +30,7 @@ const Article: NextPage<IArticleProps> = ({ title, author, description, createTi
       <div dangerouslySetInnerHTML={{ __html: converter.makeHtml(content) }} className={styles.content} />
         </div>
       </div>
-    </div>
+
   );
 };
 
