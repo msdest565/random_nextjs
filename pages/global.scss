@@ -1,0 +1,32 @@
+// ./pages/global.scss
+html[data-theme="dark"] {
+    --primary-color: #ffffff; // 主要的字体颜色
+    --primary-background-color: rgba(14, 14, 14, 1); // 主要的背景色
+    --taglist-background-color: rgba(36, 36, 36, 1); // taglist组件的背景色
+    --taglist-shadow-color: rgba(255, 255, 255, 0.87); //分界线的颜色
+    --taglist-hover-color: rgb(70, 70, 252);
+    --taglist-hover-background-color: #000000;
+    --taglist-tag-color: rgb(202, 202, 219); //taglist显示设置
+    --navbar-background-color: rgba(0, 0, 0, 0.5); // navbar组件的背景色
+    --navbar-nav-color: rgb(255, 255, 255); //navbar字体颜色
+    --navbar-nav-hover-background-color: rgb(74, 74, 110);
+    --navbar-nav-hover-color: rgb(206, 192, 192);
+    --secondary-color: rgba(255, 255, 255, 0.5); // 次一级，色值没那么显眼的字体颜色
+    --link-color: #34a8eb; // 链接 hover 上去的颜色
+}
+
+html[data-theme="light"] {
+    --primary-color: #333333;
+    --primary-background-color: rgba(255, 255, 255, 1);
+    --taglist-background-color: #fff;
+    --taglist-shadow-color: rgb(0 0 0 / 5%);
+    --taglist-hover-color: rgb(61, 61, 250);
+    --taglist-hover-background-color: #fff;
+    --taglist-tag-color: rgb(85, 85, 95);
+    --navbar-background-color: rgba(255, 255, 255, 0.5);
+    --navbar-nav-color: rgb(26, 25, 25); //navbar字体颜色
+    --navbar-nav-hover-background-color: rgb(144, 144, 250);
+    --navbar-nav-hover-color: rgb(31, 28, 28);
+    --secondary-color: #666666;
+    --link-color: #0070f3;
+}

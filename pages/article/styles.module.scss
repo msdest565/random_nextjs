@@ -1,0 +1,106 @@
+@import "../media.scss";
+
+.body {
+    margin: 0;
+}
+
+
+.background {
+    background-color: rgba($color: #302b2b, $alpha: 1.0);
+    width: 100.4%;
+    min-height: 100%;
+    height: auto;
+    position: absolute;
+    overflow: hidden;
+    margin-left: -1rem;
+
+    .article_container {
+        margin-top: 8rem;
+        margin-left: 25rem;
+        background-color: rgba($color: #535353, $alpha: 1.0);
+        width: 50rem;
+        height: 100%;
+        display: inline-block;
+
+    }
+
+    .article {
+        padding: 2.125rem;
+    }
+
+    .title {
+        margin-bottom: 1rem;
+    }
+
+    .info {
+        font-size: 0.875rem;
+        line-height: 1.25rem;
+        color: rgba($color: #eeeeee, $alpha: 1.0);
+        opacity: 0.6;
+        margin-bottom: 2.5rem;
+    }
+
+    .description {
+        font-size: 0.875rem;
+        line-height: 1.25rem;
+        color: rgba($color: #eeeeee, $alpha: 1.0);
+        padding-left: 1.25rem;
+        margin-bottom: 2.5rem;
+        position: relative;
+    }
+
+    .description::before {
+        content: "";
+        width: 0.25rem;
+        height: 1.25rem;
+        background-color: rgba($color: #e7e7e7, $alpha: 1.0);
+        opacity: 0.2;
+        position: absolute;
+        left: 0;
+        bottom: -0.125rem;
+    }
+
+    .content {
+        margin-bottom: 5rem;
+        font-size: 16px;
+        line-height: 32px;
+
+        img {
+            width: 50rem;
+        }
+    }
+}
+
+@include media-ipad {
+    .article {
+        width: 80%;
+
+        .content {
+            img {
+                width: 100%;
+            }
+        }
+    }
+}
+
+@include media-mobile {
+    .article {
+        width: 80%;
+
+        .title {
+            font-size: 1.75rem;
+            line-height: 2.4375rem;
+        }
+
+        .content {
+            h2 {
+                font-size: 1.125rem;
+                line-height: 1.5625rem;
+            }
+
+            img {
+                width: 100%;
+            }
+        }
+    }
+}

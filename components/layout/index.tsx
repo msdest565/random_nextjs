@@ -15,10 +15,12 @@ export const Layout: FC<ILayoutProps & { children: JSX.Element }> = ({
   children,
 }) => {
   return (
+    <div className={styles.background}>
     <div className={styles.layout}>
       <NavBar {...navbarData} />
       <TagList {...taglistData} />
       <main className={styles.main}>{children}</main>
+    </div>
     </div>
   );
 };

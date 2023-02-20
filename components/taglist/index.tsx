@@ -6,7 +6,6 @@ import styles from "./styles.module.scss";
 
 
 
-
 interface Itag {
     tagname: string;
     taglink: string;
@@ -30,7 +29,8 @@ export const TagList: FC<ItagListProps> = ({
             <ul className={styles.tagitem}>
             {tagList?.map((item,index) => {
                 return (
-                    <li className={styles.tag}><a href={item.taglink} >{item.tagname}</a></li>    )
+                    <li className={styles.tag} key={item.tagname}><a href={item.taglink} className={styles.tag_color}>{item.tagname}</a></li> 
+                )
             })}
             </ul>
         </nav>  

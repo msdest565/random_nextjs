@@ -1,4 +1,12 @@
 // ./components/layout/styles.module.scss
+.background {
+    min-width: 100.4%;
+    min-height: 100%;
+    margin-left: -1rem;
+    overflow: hidden;
+    position: absolute;
+    background-color: rgba($color: #252525, $alpha: 1.0);
+}
 .layout {
     .main {
         min-height: calc(100vh - 560px);

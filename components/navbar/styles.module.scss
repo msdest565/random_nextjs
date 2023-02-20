@@ -1,59 +1,135 @@
 // ./components/navbar/styles.module.scss
+@import "../../pages/media.scss";
 .navBar {
-    display: flex-start;
+    display: flex;
     align-items: center;
     justify-content: space-between;
-    background-color: hsla(0, 0%, 100%, .99);
+    background-color: rgb(133, 132, 132);
     backdrop-filter: blur(8px);
     width: 100%;
-    height: 68px;
+    height: 4.25rem;
     position: fixed;
     top: 0;
     left: 0;
-    padding: 1px 20px;
+    padding: .0625rem 1.25rem;
     z-index: 100;
 }
 
-.logo {
-    margin-bottom: 18px;
-    margin-left: 85px;
-    margin-right: 8px;
+.logoa {
+    margin-bottom: 1.125rem;
+    margin-left: 5.3125rem;
+    margin-right: .5rem;
     display: inline-block;
-    height: 25px;
+    height: 1.5625rem;
+    width: auto;
+}
+.logo {
+    margin: auto;
+    display: inline-block;
+    height: 2rem;
     width: auto;
 
 }
 
+.logo1 {
+    display: none;
+    height: 1.5625rem;
+    width: 1.5625rem;
+    margin: auto;
+}
 .logoName {
     position: absolute;
-    left: 5px;
+    left: .3125rem;
 }
 
 .navList {
     list-style-type: none;
     overflow: hidden;
     display: inline-block;
-    height: 68px;
-    width: 650px;
-
-}
-
-.navListLi {
-    float: left;
-    height: 68px;
-    width: 70px;
-    display: inline;
-    margin-top: 25px;
-}
-
-.navListLi a {
-    display: rgb(255, 255, 255);
-    color: rgb(26, 25, 25);
-    padding: 25px 15px;
-    text-decoration: none;
-}
-
-.navListLi a:hover {
-    background-color: rgb(144, 144, 250);
-    color: white;
+    height: 4.25rem;
+        width: 40.625rem;
+        top: 4.30rem;
+    }
+    
+    .navListLi {
+        float: left;
+        height: 4.25rem;
+            width: 4.375rem;
+            display: inline;
+        margin-top: 1.5625rem;
+        }
+        
+        .navListLi a {
+        display: rgb(150, 144, 144);
+            color: rgb(255, 255, 255);
+            padding: 1.5625rem .9375rem;
+            text-decoration: none;
+        }
+        
+        .navListLi a:hover {
+        background-color: rgb(84, 84, 126);
+            color: rgb(206, 192, 192);
+        }
+        
+        .phone {
+            display: none;
+        }
+        
+        
+        @media screen and (min-width: 48.6875rem) and (max-width: 54.125rem) {
+            .navBar {
+                .logoa {
+                    margin: auto;
+                    display: inline-block;
+                    height: 1.5625rem;
+                    width: auto;
+        
+                    .logo {
+                        margin: auto;
+                        display: inline-block;
+                        height: 1.5625rem;
+                        width: auto;
+                    }
+                }
+            }
+        }
+        
+        
+        @media screen and (max-width: 48.6875rem) {
+            .navBar {
+                padding: 0;
+                height: 6rem;
+                position: relative;
+        
+                .logoa {
+                    margin: auto;
+                    display: inline-block;
+                    height: 2.5rem;
+                    width: auto;
+                    position: absolute;
+                    top: 0;
+                    left: 50%;
+                    transform: translateX(-50%);
+        
+                    .logo {
+                        display: none;
+                    }
+        
+                    .logo1 {
+                        display: inline-block;
+                        margin: auto;
+                        height: 2.5rem;
+                        position: relative;
+                    }
+                }
+        
+            }
+        
+            .navList {
+                display: flex;
+        
+                .navListLi {
+                    display: wrap;
+                }
+            }
 }
