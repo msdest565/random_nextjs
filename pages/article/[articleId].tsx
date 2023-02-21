@@ -12,11 +12,11 @@ export interface IArticleProps {
   title: string;
   author: string;
   description: string;
-  createTime: string;
+  creatTime: string;
   content: string;
 }
 
-const Article: NextPage<IArticleProps> = ({ title, author, description, createTime, content }) => {
+const Article: NextPage<IArticleProps> = ({ title, author, description, creatTime, content }) => {
   const converter = new showdown.Converter();
   return (
 
@@ -24,7 +24,7 @@ const Article: NextPage<IArticleProps> = ({ title, author, description, createTi
         <div className={styles.article}>
       <h1 className={styles.title}>{title}</h1>
       <div className={styles.info}>
-        作者：{author} | 创建时间: {createTime}
+          作者：{author} | 创建时间: {creatTime}
       </div>
       <div className={styles.description}>{description}</div>
       <div dangerouslySetInnerHTML={{ __html: converter.makeHtml(content) }} className={styles.content} />
