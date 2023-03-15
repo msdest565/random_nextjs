@@ -2,14 +2,13 @@
 import React, { useContext, useEffect, useRef, useState } from 'react';
 import type { GetServerSideProps, GetStaticProps, NextPage } from 'next';
 import styles from './index.module.scss';
-import cName from 'classnames';
 import axios from 'axios';
 import { LOCALDOMAIN } from '@/utils';
 import { IArticleIntro } from './api/articleIntro';
 import { IWriter } from './api/writer';
-import App from 'next/app';
-import Link from 'next/link';
 import { useRouter } from 'next/router';
+
+
 
 interface IProps {
   writerList: {

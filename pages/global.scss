@@ -1,32 +1,84 @@
 // ./pages/global.scss
 html[data-theme="dark"] {
     --primary-color: #ffffff; // 主要的字体颜色
-    --primary-background-color: rgba(14, 14, 14, 1); // 主要的背景色
+    --primary-background-color: rgb(29, 29, 29); // 主要的背景色
     --taglist-background-color: rgba(36, 36, 36, 1); // taglist组件的背景色
-    --taglist-shadow-color: rgba(255, 255, 255, 0.87); //分界线的颜色
     --taglist-hover-color: rgb(70, 70, 252);
     --taglist-hover-background-color: #000000;
-    --taglist-tag-color: rgb(202, 202, 219); //taglist显示设置
-    --navbar-background-color: rgba(0, 0, 0, 0.5); // navbar组件的背景色
+    --taglist-tag-color: rgb(163, 163, 163); //taglist显示设置
+    --navbar-background-color: rgb(43, 43, 43); // navbar组件的背景色
     --navbar-nav-color: rgb(255, 255, 255); //navbar字体颜色
-    --navbar-nav-hover-background-color: rgb(74, 74, 110);
+    --navbar-nav-hover-background-color: rgb(64, 64, 77);
     --navbar-nav-hover-color: rgb(206, 192, 192);
-    --secondary-color: rgba(255, 255, 255, 0.5); // 次一级，色值没那么显眼的字体颜色
+    --navbar-nav-a-hover-color: rgb(206, 192, 192);
+    --navbar-nav-a-hover-background-color: rgb(84, 84, 126);
+    --theme-icon: url("../public/theme_dark.png");
+    --article-container-background-color: rgb(41, 41, 41);
+    --article-nav-item-color: rgb(255, 255, 255);
+    --article-entry-list-background-color: rgb(41,41,41);
+    --article-item-border-bottom-color: #e5e6eb;
+    --article-writer-item-color: #d3d1d1;
+    --article-time-item-color: #d3d1d1;
+    --article-title-color: rgb(255,255,255);
+    --article-abstract-color: #86909c;
+    --article-abstract-bottom-color: rgb(110, 110, 110);
+    --article-content-title-color: rgb(255,255, 255);
+    --article-content-description-color: #eeeeee;
+    --article-content-description-background-color: #e7e7e7;
+    --article-content-color: white;
+    --bangdan-color: rgb(255, 255, 255);
+    --bangdan-border-bottom-color: rgb(226, 226, 226);
+    --bangdan-writers-list-item: rgb(233, 233, 233);
+    --secondary-color: rgba(255, 255, 255, 1); // 次一级，色值没那么显眼的字体颜色
     --link-color: #34a8eb; // 链接 hover 上去的颜色
 }
 
 html[data-theme="light"] {
     --primary-color: #333333;
-    --primary-background-color: rgba(255, 255, 255, 1);
-    --taglist-background-color: #fff;
-    --taglist-shadow-color: rgb(0 0 0 / 5%);
+    --primary-background-color: rgb(244, 244, 244);
+    --taglist-background-color: rgb(230, 230, 230);
     --taglist-hover-color: rgb(61, 61, 250);
     --taglist-hover-background-color: #fff;
     --taglist-tag-color: rgb(85, 85, 95);
-    --navbar-background-color: rgba(255, 255, 255, 0.5);
+    --navbar-background-color: rgba(255, 255, 255, 1);
     --navbar-nav-color: rgb(26, 25, 25); //navbar字体颜色
-    --navbar-nav-hover-background-color: rgb(144, 144, 250);
+    --navbar-nav-hover-background-color: rgb(141, 141, 156);
     --navbar-nav-hover-color: rgb(31, 28, 28);
+    --navbar-nav-a-hover-color: rgb(0, 0, 0);
+    --navbar-nav-a-hover-background-color: rgb(195, 195, 248);
+    --theme-icon: url("../public/theme_light.png");
+    --article-container-background-color: rgb(255, 255, 255);
+    --article-nav-item-color: rgb(0, 0, 0);
+    --article-entry-list-background-color: #ffffff;
+    --article-item-border-bottom-color: #e5e6eb;
+    --article-writer-item-color: #474747;
+    --article-title-color: rgb(36, 36, 36);
+    --article-abstract-color: #a0a0a0;
+    --article-abstract-bottom-color: rgb(102, 102, 102);
+    --article-content-title-color: rgb(5, 5, 5);
+    --article-content-description-color: #000000;
+    --article-content-description-background-color: #0c0c0c;
+    --article-content-color: black;
+    --bangdan-color: rgb(15,15,15);
+    --bangdan-border-bottom-color: rgb(46, 46, 46);
+    --bangdan-writers-list-item: rgb(10,10,10);
     --secondary-color: #666666;
     --link-color: #0070f3;
+}
+
+html,
+body {
+    padding: 0;
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+        Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+* {
+    box-sizing: border-box;
 }

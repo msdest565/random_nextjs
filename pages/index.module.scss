@@ -1,10 +1,10 @@
 .main_container {
-    background-color: #4d4c4c;
     position: relative;
     top: 8rem;
     margin-left: 24.0625rem;
     margin-right: 40.3128rem;
     width: 43.75rem;
+    background-color: var(--article-container-background-color);
 }
 
 .list_header {
@@ -23,7 +23,7 @@
     display: inline-block;
     margin-bottom: 0.5rem;
     margin-right: 2rem;
-    color: #ffffff;
+    color: var(--article-nav-item-color);
 }
 
 .artical_line {
@@ -32,7 +32,7 @@
 
 .entry_list {
     width: 100%;
-    background-color: #696969;
+    background-color: var(--aeticle-entry-list-background-color);
     position: relative;
 }
 
@@ -48,13 +48,13 @@
     width: 100%;
     height: 8.8033rem;
     padding-bottom: .1rem;
-    border-bottom: .1rem solid #e5e6eb;
+    border-bottom: .1rem solid var(--article-item-border-bottom-color);
 }
 
 .item_container {
     cursor: pointer;
     position: relative;
-    background: #696969;
+    background: var(--article-entry-list-background-color);
     display: inline-block;
     flex-direction: column;
     align-items: center;
@@ -69,7 +69,7 @@
     margin-right: .5rem;
     font-size: .8125rem;
     line-height: 1rem;
-    color: #d3d1d1;
+    color: var(--article-writer-item-color);
 }
 
 .time_item {
@@ -78,7 +78,7 @@
     margin-right: .5rem;
     font-size: .8125rem;
     line-height: 1rem;
-    color: #d3d1d1;
+    color: var(--article-writer-item-color);
 }
 
 .tag_item {
@@ -87,7 +87,7 @@
     justify-content: flex-start;
     font-size: .8125rem;
     line-height: 1rem;
-    color: #d3d1d1;
+    color: var(--article-writer-item-color);
 }
 
 .artical_container {
@@ -107,7 +107,7 @@
     width: 41.25rem;
     cursor: pointer;
     flex-direction: column;
-    border-bottom-style: solid;
+    border-bottom: .01rem solid var(--article-abstract-bottom-color);
     text-align: left;
     text-rendering: optimizeLegibility;
     text-size-adjust: 100%;
@@ -121,25 +121,20 @@
     font-weight: 500;
     font-size: 1.5rem;
     height: 1.875rem;
-        text-decoration: none;
-        color: #ffffff;
-        width: 6.75rem;
+    color: var(--article-title-color);
+    width: 6.75rem;
     }
     
     .abstract_container {
-        margin-top: 20px;
+        margin-top: 1.25rem;
     }
     
     .abstract {
-        color: #86909c;
         font-size: .8125rem;
         line-height: 1.375rem;
-        display: -webkit-box;
+        display: inline;
         overflow: hidden;
-        text-overflow: ellipsis;
-        -webkit-box-orient: vertical;
-        -webkit-line-clamp: 1;
-        text-decoration: none;
+        color: var(--article-abstract-color);
     }
     
     .abstract_div {
@@ -158,22 +153,22 @@
 }
 
 .writer_block {
-    background-color: #696969;
     position: absolute;
     display: block;
     top: 16.5rem;
     right: -19rem;
     width: 17.6914rem;
+    background-color: var(--article-container-background-color);
 }
 
 .bangdan {
     display: flex;
     align-items: center;
     height: 3rem;
-        font-size: 2rem;
-        color: rgb(209, 209, 209);
-        padding-bottom: 0.8rem;
-        border-bottom: 0.03rem dashed white;
+    font-size: 2rem;
+    color: var(--bangdan-color);
+    padding-bottom: 0.8rem;
+    border-bottom: 0.03rem dashed var(--bangdan-border-bottom-color);
 }
 
 .writerlistcontainer {
@@ -183,7 +178,7 @@
 
 .writers_list_item {
     display: inline-block;
-    color: rgb(238, 238, 238);
+    color: var(--bangdan-writers-list-item);
     padding-bottom: 0.8rem;
     font-size: 1.2rem;
 }
@@ -191,8 +186,8 @@
 .writer_intro {
     display: flex;
     font-size: 0.8rem;
-    color: rgb(190, 190, 190);
-    border-bottom: 0.02rem solid rgb(36, 36, 36);
+    color: var(--article-abstract-color);
+    border-bottom: 0.02rem solid var(--article-item-border-bottom-color);
 }
 
 @media screen and (max-width: 48.6875rem) {
@@ -207,8 +202,8 @@
             display: none;
         }
 
-                                                                .writer_block {
-                                                                    display: none;
-                                                                }
-                                                                }
+        .writer_block {
+            display: none;
+        }
+        }
 }

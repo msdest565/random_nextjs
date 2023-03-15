@@ -5,9 +5,9 @@
     .article_container {
         margin-top: 8rem;
         margin-left: 25rem;
-        background-color: rgba($color: #535353, $alpha: 1.0);
+        background-color: var(--article-container-background-color);
         width: 50rem;
-        height: 100%;
+        min-height: 50rem;
         display: inline-block;
 
     }
@@ -18,12 +18,13 @@
 
     .title {
         margin-bottom: 1rem;
+        color: var(--article-content-title-color);
     }
 
     .info {
         font-size: 0.875rem;
         line-height: 1.25rem;
-        color: rgba($color: #eeeeee, $alpha: 1.0);
+        color: var(--article-abstract-color);
         opacity: 0.6;
         margin-bottom: 2.5rem;
         width: 20rem;
@@ -32,7 +33,7 @@
     .description {
         font-size: 0.875rem;
         line-height: 1.25rem;
-        color: rgba($color: #eeeeee, $alpha: 1.0);
+        color: var(--article-content-description-color);
         padding-left: 1.25rem;
         margin-bottom: 2.5rem;
         position: relative;
@@ -42,7 +43,7 @@
         content: "";
         width: 0.25rem;
         height: 1.25rem;
-        background-color: rgba($color: #e7e7e7, $alpha: 1.0);
+        background-color: var(--article-content-description-background-color);
         opacity: 0.2;
         position: absolute;
         left: 0;
@@ -54,7 +55,7 @@
         font-size: 1rem;
             line-height: 2rem;
             height: 100%;
-            color: white;
+            color: var(--article-content-color);
         img {
             width: 50rem;
         }
